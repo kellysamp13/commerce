@@ -20,6 +20,12 @@ a:hover {
 h3 {
   letter-spacing: 3px;
   line-height: 1.5;
+  margin: 0;
+}
+
+h5 {
+  letter-spacing: 1px;
+  line-height: 1.5;
   margin: 0 0 1rem;
 }
 
@@ -34,17 +40,25 @@ p {
   box-sizing: border-box;
 }
 
+.app {
+  display: flex;
+  overflow-x: hidden;
+}
+
 .nav {
   background-color: #301934;
   color: white;
   padding: 1rem 2rem;
+  height: 100vh;
+  position: fixed;
 }
 
 .pageContainer {
-  align-items: center;
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  padding-left: 6rem;
+  padding-bottom: 3rem;
   width: 100vw;
 }
 
@@ -56,8 +70,4 @@ p {
   cursor: pointer;
   max-width: 10rem;
   padding: 0.5rem 1rem;
-}
-
-.ctaButton:hover {
-  box-shadow: 2px 2px 2px black;
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from './User.module.css'
+import Link from 'next/link'
 
 const UserProfile = () => (
-    <div className="pageContainer">
+    <div className={`${styles.profileContainer} pageContainer`}>
         <div className={styles.profileWrapper}>
             <div className={styles.profileImage}>
                 <img className="" src="https://www.goodtomicha.com/wp-content/uploads/2019/10/orange-smoke-bomb-pumpkin-shoot-1300x1950.jpg" />
@@ -15,6 +16,29 @@ const UserProfile = () => (
                 </p>
                 <button className="ctaButton">Contact</button>
             </div>
+        </div>
+
+        <div className={styles.marketWrapper}>
+            <Link href="/items/item">
+                <div className={styles.itemCard}>
+                    <h5>Conversation with the Dead</h5>
+                    <img className={styles.itemImage} src="https://data.whicdn.com/images/336763346/original.jpg?t=1572197944"/>
+                </div>
+            </Link>
+
+            <Link href="/items/item">
+                <div className={styles.itemCard}>
+                    <h5>Conversation with Dead Royalty</h5>
+                    <img className={styles.itemImage} src="https://images.metmuseum.org/CRDImages/eg/original/89.2.660_EGDP013679.jpg"/>
+                </div>
+            </Link>
+
+            <Link href="/items/item">
+                <div className={styles.itemCard}>
+                    <h5>Conversation with Dead Celebrity</h5>
+                    <img className={styles.itemImage} src="https://media.glamour.com/photos/569ec1249d41c3800fc7cc43/master/w_1600%2Cc_limit/marilyn-monroe.jpg"/>
+                </div>
+            </Link>
         </div>
     </div>
 )

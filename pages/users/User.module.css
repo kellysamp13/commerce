@@ -10,11 +10,11 @@
 }
 
 .profileImage {
-    border: 5px solid #c2649a;
     border-radius: 50%;
+    border: 5px solid #e4c7b7;
     flex-shrink: 0;
-    overflow: hidden;
     height: 14rem;
+    overflow: hidden;
     width: 14rem;
 }
 
@@ -23,10 +23,40 @@
 }
 
 .title {
-    margin: 0;
+    color: #c2649a;
 }
 
 .userType {
     font-style: italic;
     margin: 0 0 1rem;
+}
+
+.profileContainer {
+    align-items: center;
+    flex-direction: column;
+}
+
+.itemImage {
+    height: auto;
+    width: 10rem;
+}
+
+.marketWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.itemCard {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.itemCard:hover {
+    box-shadow: 0px 0px 30px lightgray;
 }

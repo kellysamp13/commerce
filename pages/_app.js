@@ -10,11 +10,13 @@ const MyApp = ({ Component, pageProps }) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <nav className="nav">
-      <Link href="/">Home</Link>
-    </nav>
+    <main className="app">
+      <nav className="nav">
+        <Link href="/">Home</Link>
+      </nav>
 
-    <Component {...pageProps} />
+      <Component {...pageProps} />
+    </main>
   </>
 )
 
