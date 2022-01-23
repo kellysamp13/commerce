@@ -1,5 +1,7 @@
 html,
 body {
+  background-color: #522157;
+  color: white;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -11,6 +13,51 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #c2649a;
+}
+
+h3 {
+  letter-spacing: 3px;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  margin: 0 0 1rem;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.nav {
+  background-color: #301934;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.pageContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  width: 100vw;
+}
+
+.ctaButton {
+  background-color: #c2649a;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  max-width: 10rem;
+  padding: 0.5rem 1rem;
+}
+
+.ctaButton:hover {
+  box-shadow: 2px 2px 2px black;
 }

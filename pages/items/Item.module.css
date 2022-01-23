@@ -1,0 +1,16 @@
+.itemWrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.itemWrapper p {
+    max-width: 20rem;
+}
+
+.itemImage {
+    margin-bottom: 1rem;
+    height: 14rem;
+    width: 14rem;
+}

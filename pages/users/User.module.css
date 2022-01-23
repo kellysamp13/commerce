@@ -1,0 +1,32 @@
+.profileWrapper {
+    display: flex;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    max-width: 20rem;
+}
+
+.profileImage {
+    border: 5px solid #c2649a;
+    border-radius: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+    height: 14rem;
+    width: 14rem;
+}
+
+.profileImage img {
+    width: 100%;
+}
+
+.title {
+    margin: 0;
+}
+
+.userType {
+    font-style: italic;
+    margin: 0 0 1rem;
+}
